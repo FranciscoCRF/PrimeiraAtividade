@@ -5,13 +5,9 @@
  */
 package primeiraatividade;
 
-import java.awt.BorderLayout;
-import java.awt.Container;
-import java.awt.FlowLayout;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
+import java.awt.*;
+
+import javax.swing.*;
 
 
 public class Questao2 extends JFrame{
@@ -20,7 +16,6 @@ public class Questao2 extends JFrame{
     super("Mensagem de confirmação");
     
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    setSize(600,200);
     setVisible(true);
     
     Container c = getContentPane();
@@ -31,6 +26,8 @@ public class Questao2 extends JFrame{
     c.add(BorderLayout.CENTER, n);
     n.add(new JButton("OK"));
     n.add(new JButton("Cancel"));
+    
+    pack();
 
 }
     

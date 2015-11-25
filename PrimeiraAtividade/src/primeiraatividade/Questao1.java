@@ -27,8 +27,9 @@ public class Questao1 extends JFrame{
         c.add(new JButton("Cancel"));
         
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(300,200);
         setVisible(true);
+        
+        pack();
     }
     public static void main(String[] args) {
         new Questao1();
