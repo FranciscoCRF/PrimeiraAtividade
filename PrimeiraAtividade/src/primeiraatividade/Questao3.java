@@ -5,20 +5,8 @@
  */
 package primeiraatividade;
 
-import java.awt.BorderLayout;
-import java.awt.Container;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
-import java.awt.GridLayout;
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JComboBox;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
+import java.awt.*;
+import javax.swing.*;
 
 /**
  *
@@ -45,10 +33,11 @@ public class Questao3 extends JFrame{
         combo.addItem("Feminino");
         
         JTextArea texto2 = new JTextArea();
-        JScrollPane scroll = new JScrollPane();
+        JScrollPane scroll = new JScrollPane(texto2);
         
         c.setLayout(new BorderLayout());
         c2.setLayout(new GridLayout(12,1));
+        
 
         c2.add(new JLabel("Nome:"));
         c2.add(texto);
@@ -62,9 +51,10 @@ public class Questao3 extends JFrame{
         c2.add(new JCheckBox("Circuitos Digitais"));
         c2.add(new JLabel("Deixe sua opnião sobre o sistema: "));
         c2.add(scroll);
-        c.add(BorderLayout.CENTER, new JButton("Cadastrar"));
+        c.add(BorderLayout.SOUTH, new JButton("Cadastrar"));
         
         c.add(BorderLayout.NORTH, c2);
+        
         
         pack();
         

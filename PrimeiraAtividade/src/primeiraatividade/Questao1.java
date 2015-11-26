@@ -5,13 +5,8 @@
  */
 package primeiraatividade;
 
-import java.awt.Container;
-import java.awt.GridLayout;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPasswordField;
-import javax.swing.JTextField;
+import java.awt.*;
+import javax.swing.*;
 
 public class Questao1 extends JFrame{
 
@@ -30,8 +25,8 @@ public class Questao1 extends JFrame{
         setVisible(true);
         setResizable(false);
         setLocationRelativeTo(null);
+        setSize(700,200);
         
-        pack();
     }
     public static void main(String[] args) {
         new Questao1();

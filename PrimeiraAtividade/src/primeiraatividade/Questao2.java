@@ -6,14 +6,13 @@
 package primeiraatividade;
 
 import java.awt.*;
-
 import javax.swing.*;
 
 
 public class Questao2 extends JFrame{
     
     public Questao2(){
-    super("Mensagem de confirmação");
+    super("Atenção!");
     
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setVisible(true);
