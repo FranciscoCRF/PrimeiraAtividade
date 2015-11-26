@@ -33,6 +33,9 @@ public class Questao3 extends JFrame{
         super("Cadastro");
         setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setResizable(false);
+        setLocationRelativeTo(null);
+        
         
         Container c = getContentPane();
         Container c2 = new JPanel();
@@ -42,7 +45,7 @@ public class Questao3 extends JFrame{
         combo.addItem("Feminino");
         
         JTextArea texto2 = new JTextArea();
-        JScrollPane scroll = new JScrollPane(texto2);
+        JScrollPane scroll = new JScrollPane();
         
         c.setLayout(new BorderLayout());
         c2.setLayout(new GridLayout(12,1));
@@ -64,6 +67,8 @@ public class Questao3 extends JFrame{
         c.add(BorderLayout.NORTH, c2);
         
         pack();
+        
+        
     }
     
     public static void main(String[] args) {

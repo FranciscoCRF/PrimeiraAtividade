@@ -28,6 +28,8 @@ public class Questao1 extends JFrame{
         
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
+        setResizable(false);
+        setLocationRelativeTo(null);
         
         pack();
     }

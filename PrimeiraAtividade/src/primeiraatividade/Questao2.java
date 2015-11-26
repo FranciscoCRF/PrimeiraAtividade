@@ -17,6 +17,8 @@ public class Questao2 extends JFrame{
     
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setVisible(true);
+    setResizable(false);
+    setLocationRelativeTo(null);
     
     Container c = getContentPane();
     Container n = new JPanel();
